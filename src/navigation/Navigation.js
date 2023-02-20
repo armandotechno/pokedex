@@ -30,7 +30,7 @@ export const Navigation = () => {
         }}
       />
       <Tab.Screen
-        name="Mi cuenta"
+        name="Account"
         component={AccountNavigation}
         options={{
           tabBarLabel: "Mi cuenta",
