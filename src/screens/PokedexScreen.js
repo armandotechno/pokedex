@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { getPokemonsApi, getPokemonDetailsByUrlApi } from "../api/pokemon";
+import { PokemonList } from "../components/PokemonList";
 
 export const PokedexScreen = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -38,7 +39,7 @@ export const PokedexScreen = () => {
 
   return (
     <View>
-      <Text>PokedexScreen</Text>
+      <PokemonList pokemons={pokemons} />
     </View>
   );
 };
