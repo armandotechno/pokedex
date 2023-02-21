@@ -27,6 +27,8 @@ export const Navigation = () => {
         options={{
           tabBarLabel: "",
           tabBarIcon: () => renderPokeball(),
+          title: "",
+          headerTransparent: true,
         }}
       />
       <Tab.Screen
