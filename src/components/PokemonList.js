@@ -1,4 +1,5 @@
 import { StyleSheet, Text, FlatList } from "react-native";
+import { PokemonCard } from "./PokemonCard";
 
 export const PokemonList = (props) => {
   const { pokemons } = props;
@@ -10,7 +11,7 @@ export const PokemonList = (props) => {
       numColumns={2} // Cuantos items por columnas queremos
       showsVerticalScrollIndicator={false} // cuando se hace scroll no sale la barra
       keyExtractor={(pokemon) => String(pokemon.id)} // Esto es obligatorio
-      renderItem={({ item }) => <Text>{item.name}</Text>}
+      renderItem={({ item }) => <PokemonCard pokemon={item} />}
       contentContainerStyle={styles.FlatListContentContainer}
     />
   );
