@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ScrollView } from "react-native";
 import { getPokemonDetailsApi } from "../api/pokemon";
 import { Header } from "../components/pokemon/Header";
+import { Stats } from "../components/pokemon/Stats";
 import { Type } from "../components/pokemon/Type";
 
 export const PokemonScreen = (props) => {
@@ -34,6 +35,7 @@ export const PokemonScreen = (props) => {
         type={pokemon.types[0].type.name}
       />
       <Type types={pokemon.types} />
+      <Stats stats={pokemon.stats} />
     </ScrollView>
   );
 };
