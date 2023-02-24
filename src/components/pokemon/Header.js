@@ -8,8 +8,6 @@ export const Header = (props) => {
 
   const bgStyle = [{ backgroundColor: color, ...styles.bg }];
 
-  console.log(color);
-
   return (
     <>
       <View style={bgStyle} />

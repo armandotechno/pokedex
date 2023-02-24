@@ -18,9 +18,9 @@ export const Navigation = () => {
           tabBarIcon: ({ color, size }) => (
             <Icon name="heart" color={color} size={size} />
           ),
-          title: "Favoritos",
         }}
       />
+
       <Tab.Screen
         name="Pokedex"
         component={PokedexNavigation}
@@ -28,9 +28,10 @@ export const Navigation = () => {
           tabBarLabel: "",
           tabBarIcon: () => renderPokeball(),
           title: "",
-          headerTransparent: true,
+          headerShown: false, // Esto cambia la posición del botón, ojo
         }}
       />
+
       <Tab.Screen
         name="Account"
         component={AccountNavigation}
@@ -39,7 +40,6 @@ export const Navigation = () => {
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),
-          title: "Mi cuenta",
         }}
       />
     </Tab.Navigator>

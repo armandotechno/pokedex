@@ -1,4 +1,3 @@
-// import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createStackNavigator } from "@react-navigation/stack";
 import { PokedexScreen } from "../screens/PokedexScreen";
 import { PokemonScreen } from "../screens/PokemonScreen";
@@ -11,18 +10,12 @@ export const PokedexNavigation = () => {
       <Stack.Screen
         name="Pokedex"
         component={PokedexScreen}
-        options={{
-          title: "",
-          headerTransparent: true,
-        }}
+        options={{ title: "", headerTransparent: false }}
       />
       <Stack.Screen
         name="Pokemon"
         component={PokemonScreen}
-        options={{
-          title: "",
-          headerTransparent: true,
-        }}
+        options={{ title: "", headerTransparent: true }}
       />
     </Stack.Navigator>
   );
