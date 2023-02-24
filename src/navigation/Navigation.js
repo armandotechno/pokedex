@@ -18,6 +18,7 @@ export const Navigation = () => {
           tabBarIcon: ({ color, size }) => (
             <Icon name="heart" color={color} size={size} />
           ),
+          title: "Favoritos",
         }}
       />
 
@@ -40,6 +41,7 @@ export const Navigation = () => {
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),
+          title: "Mi cuenta",
         }}
       />
     </Tab.Navigator>

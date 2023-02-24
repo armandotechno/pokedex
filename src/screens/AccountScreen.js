@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
+import { LoginForm } from "../components/Auth/LoginForm";
+import { UserData } from "../components/Auth/UserData";
 
 export const AccountScreen = () => {
-  return (
-    <View>
-      <Text>Desde Account.js</Text>
-    </View>
-  );
+  const auth = null;
+
+  return <View>{auth ? <UserData /> : <LoginForm />}</View>;
 };
