@@ -1,8 +1,6 @@
-import { PASSWORD } from "@env";
-
 export const user = {
   username: "mandojose",
-  password: { PASSWORD },
+  password: "123456",
 };
 
 export const userDetails = {
