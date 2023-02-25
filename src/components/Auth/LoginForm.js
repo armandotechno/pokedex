@@ -51,7 +51,10 @@ export const LoginForm = () => {
         value={formik.values.password}
         onChangeText={(text) => formik.setFieldValue("password", text)}
       />
-      <Button title="Entrar" onPress={formik.handleSubmit} />
+
+      <View style={styles.btnLogin}>
+        <Button title="Entrar" onPress={formik.handleSubmit} />
+      </View>
 
       <Text style={styles.error}>{formik.errors.username}</Text>
       <Text style={styles.error}>{formik.errors.password}</Text>
@@ -91,6 +94,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     borderRadius: 10,
+  },
+  btnLogin: {
+    padding: 20,
   },
   error: {
     textAlign: "center",
