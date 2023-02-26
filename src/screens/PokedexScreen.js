@@ -33,7 +33,7 @@ export const PokedexScreen = () => {
 
       setPokemons([...pokemons, ...pokemonsArray]);
     } catch (error) {
-      console.log(error);
+      throw error;
     }
   };
 
