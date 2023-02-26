@@ -19,6 +19,7 @@ export const Navigation = () => {
             <Icon name="heart" color={color} size={size} />
           ),
           title: "Favoritos",
+          headerShown: false,
         }}
       />
 
